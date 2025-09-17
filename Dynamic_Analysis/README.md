@@ -3,30 +3,23 @@ on LLVM. The project involves instrumenting an LLVM module in order to
 produce a new program with varying policies and strategies for fault
 tolerance.
 
-After completing this project, a student should have a better understanding
-of the workflow involved with dynamic analysis as well as common techniques
-including instrumentation, runtime support libraries, and shadow memory.
-
 Building with CMake
 ==============================================
-1. Clone the demo repository.
 
-        git clone http://github.com/nsumner/se-fault-tolerant-template.git
-
-2. Create a new directory for building.
+1. Create a new directory for building.
 
         mkdir tolerantbuild
 
-3. Change into the new directory.
+2. Change into the new directory.
 
         cd tolerantbuild
 
-4. Run CMake with the path to the LLVM source.
+3. Run CMake with the path to the LLVM source.
 
         cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=True \
             -DLLVM_DIR=</path/to/LLVM/build>/lib/cmake/llvm/ ../se-fault-tolerant-template
 
-5. Run make inside the build directory:
+4. Run make inside the build directory:
 
         make
 
