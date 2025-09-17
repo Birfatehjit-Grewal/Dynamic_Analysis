@@ -6,7 +6,7 @@ tolerance.
 Building with CMake
 ==============================================
 
-1. Create a new directory for building.
+1. Create a new directory for building outside of Dynamic_Analysis directory.
 
         mkdir tolerantbuild
 
@@ -17,7 +17,7 @@ Building with CMake
 3. Run CMake with the path to the LLVM source.
 
         cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=True \
-            -DLLVM_DIR=</path/to/LLVM/build>/lib/cmake/llvm/ ../se-fault-tolerant-template
+            -DLLVM_DIR=</path/to/LLVM/build>/lib/cmake/llvm/ ../Dynamic_Analysis
 
 4. Run make inside the build directory:
 
